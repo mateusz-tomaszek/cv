@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9FBFF;
+}
+
+.all {
+    background-color: #F9FBFF;
+    position: relative;
+    width: 98%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;   /* <<< KLUCZ */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;       /* żeby sekcje były równo z border-radius */
+    border: 2.5px solid rgb(22, 174, 194);
+    box-shadow: 8px 8px 16px rgba(48, 48, 48, 0.2);
+}
+
+.section1 {
+    background-color: rgb(22, 174, 194);
+    width: 30%;
+    padding: 10px;
+    color: white;
+}
+
+.section2 {
+    background-color: #F9FBFF;
+    width: 70%;
+    padding: 10px;
+}
+
+
+.level {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.level .box {
+  width: 20px;
+  height: 7px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background: transparent;
+  transition: background .2s ease;
+  transform: skewX(-20deg);   /* nadaje efekt równoległoboku */
+}
+
+/* Gdy DANY prostokąt ma id="mam" — wypełnij go kolorem */
+.level #mam {
+  background: #fff;   /* zmień na np. #007BFF dla niebieskiego */
+}
+
+
+
+.section1 hr {
+  border: none;
+  border-top: 1.5px solid #fff;   /* białe */
+  margin: 15px 0;
+  width: 100%;                  /* pełna szerokość */
+}
+
+.section2 hr {
+  border: none;
+  border-top: 1.5px solid #222; /* czarne / ciemne */               /* delikatne, mniej agresywne */
+  margin: 15px 0;
+  width: 100%;
+}
+
+
+
+.section1 ul {
+  list-style: none;   /* wyłączamy domyślne kropki */
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.section1 li {
+  margin: 3px 2px;
+  position: relative;
+  padding-left: 12px;   /* mały odstęp na ikonkę */
+}
+
+.section1 li::before {
+  content: "•";          /* własna kropka */
+  position: absolute;
+  left: 0;
+  color: white;          /* dopasuj do sekcji */
+  font-size: 16px;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.section2 ul {
+  list-style: none;   /* wyłączamy domyślne kropki */
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.section2 li {
+  margin: 3px 6px;
+  position: relative;
+  padding-left: 12px;   /* mały odstęp na ikonkę */
+}
+
+.section2 li::before {
+  content: "•";          /* własna kropka */
+  position: absolute;
+  left: 0;
+  color: rgb(0, 0, 0);          /* dopasuj do sekcji */
+  font-size: 16px;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(172, 242, 255);
+}
+
+.adres
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wyksztalcenie p
+{
+    margin-top: -15px;
+    color: rgb(75, 75, 75);
+}
+
+
+.wyksztalcenie h3
+{
+    margin-top: -5px;
+    
+}
+
+
+
+
+/* Styl scrollbara */
+::-webkit-scrollbar {
+  width: 10px;              /* szerokość paska */
+}
+
+::-webkit-scrollbar-track {
+  background: #F9FBFF;      /* kolor tła – taki jak body */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(22, 174, 194); /* kolor "kciuka" – ciut ciemniejszy dla kontrastu */
+  border-radius: 10px;       /* zaokrąglenie */
+  border: 2px solid #F9FBFF; /* żeby wyglądało schludnie */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(18, 136, 151); /* ciemniejszy na hover */
+}
+
+
+
+#technik
+{
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: -18px;
+}

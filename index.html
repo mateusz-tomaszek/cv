@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="icon.png">
+</head>
+</head>
+<body>
+    <div class="all">
+        <div class="section1">
+
+            <div class="adres">
+        <p>
+        <i class="fa-solid fa-location-dot"></i> 
+        <a href="https://www.google.com/maps/place/44-122+Gliwice" target="_blank">
+            Gliwice, PL
+        </a>
+        </p>
+
+        <p>
+        <i class="fa-solid fa-car"></i>
+        Prawo jazdy kat. B
+        </p>
+
+
+
+        <!-- -------- -->
+
+        <!-- <p>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+48730330309">+48 538 434 796</a>
+        </p>
+
+        <p>
+        <i class="fa-solid fa-envelope"></i>
+        mateusz.tomaszek131@gmail.com
+        </p> -->
+
+        <!-- -------- -->
+        
+</div>
+ 
+
+        <hr>
+
+    
+        <h2>Umiejętności</h2>
+        <ul>
+            <li>Kreatywność</li>
+            <li>Umiejętności organizacyjne</li>
+            <li>Umiejętność prowadzenia negocjacji</li>
+            <li>Komunikatywność</li>
+            <li>Samodzielność</li>
+            <li>Umiejętność pracy w zespole</li>
+            <li>Wysoka kultura osobista</li>
+            <li>Zaangażowanie w pracę</li>
+            <li>Szybkość uczenia się</li>
+            <li>Organizacja pracy własnej</li>
+            <li>Dokładność i precyzja</li>
+
+        </ul>
+        <hr>
+        <h2>Języki</h2>
+
+            <p>Angielski - B1</p>
+
+        <div class="level">
+            <div class="box" id="mam"></div>
+            <div class="box" id="mam"></div>
+            <div class="box" id="mam"></div> <!-- TEN się wypełni -->
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+
+            <hr>
+
+<!-- certyfikaty -->
+        <h2>Certyfikaty</h2>
+        <ul>
+            <li>Technologie Chmurowe Microsoft</li>
+        </ul>
+
+
+
+
+        </div>
+
+
+
+<!-- -------------------------- -->
+
+
+
+        <div class="section2">
+            <h1>Mateusz Tomaszek,
+                <span id="wiek"> </span>
+            </h1>
+            <p id="technik">Technik Informatyk</p>
+            <script>
+                function calculateAge(birthDate) {
+                    const today = new Date();
+                    const birth = new Date(birthDate);
+                    let age = today.getFullYear() - birth.getFullYear();
+                    const monthDiff = today.getMonth() - birth.getMonth();
+                    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+                        age--;
+                    }
+                    return age;
+                }
+                const birthDate = '2005-02-21'; // Format: RRRR-MM-DD
+                document.getElementById('wiek').innerText = calculateAge(birthDate) + ' lat';
+            </script>
+            
+
+                    <p>
+            Jestem absolwentem technikum informatycznego z kwalifikacjami INF.02 i INF.03 oraz certyfikatem Microsoft. 
+            Interesuję się sprzętem komputerowym, sieciami i nowymi technologiami. 
+            Chciałbym zdobywać pierwsze doświadczenia zawodowe, rozwijać swoje umiejętności praktyczne oraz uczyć się obsługi nowych rozwiązań technologicznych. 
+            Szybko się uczę, pracuję dokładnie i staram się udoskonalać swoje zadania. 
+            Lubię poznawać nowe wyzwania i nie przepadam za monotonią w pracy.
+        </p>
+        <hr>
+
+        <div class="wyksztalcenie">
+
+
+        <h2>Wykształcenie</h2> 
+        <h3>- Technik informatyk, Teb Edukacja Giwice</h3>
+        <p>wrzesień 2020 - kwiecień 2025</p>
+        
+        <hr>
+        <h2>Specjalizacja</h2>
+        <ul>
+            <li>Budowa, montaż i konfiguracja komputerów oraz urządzeń peryferyjnych</li>
+            <li>Tworzenie i administracja sieci komputerowych</li>
+            <li>Znajomość systemów operacyjnych Windows i Linux</li>
+            <li>Tworzenie stron internetowych (HTML, CSS, JavaScript, PHP, SQL)</li>
+            <li>Obsługa baz danych i podstawy programowania</li>
+            <li>Lutowanie, elektronika, kodowanie mikrokontrolerów</li>
+            <li>Certyfikat Microsoft, kwalifikacje zawodowe INF.02 i INF.03</li>
+        </ul>
+            <hr>
+                <h2>Doświadczenie</h2>
+        <h3>- Praktyki zawodowe, Firma Fabmet Sp. z o.o.</h3>
+        <p>sty 2022 - lut 2022 oraz paź 2022 - lis 2022</p>
+
+            <hr></div>
+        <h2>Hobby</h2>
+        <ul>
+            <li>Fotografia</li>
+            <li>Tworzenie muzyki</li>
+            <li>Programowanie</li>
+            <li>Elektronika (lutowanie, projekty DIY)</li>
+            <li>Nowe technologie</li>
+            <li>Budowanie i projektowanie komputerów</li>
+        </ul>
+<!-- dodaj klauzre riodo wraz z nazwa firmy -->
+        <hr>
+
+            <!-- -------------- -->
+
+        <p id="klauzula">Wyrażam zgodę na przetwarzanie moich danych osobowych przez Mateusza Tomaszka w celu realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+
+            <!-- -------------- -->
+</div>
+    </div>
+</body>
+</html>
