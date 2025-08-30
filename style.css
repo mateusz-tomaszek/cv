@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F9FBFF;
+    background-color: #ffffff;
 }
 
 .all {
@@ -20,7 +20,7 @@ body {
     border-radius: 10px;
     overflow: hidden;       /* żeby sekcje były równo z border-radius */
     border: 2.5px solid rgb(22, 174, 194);
-    box-shadow: 8px 8px 16px rgba(48, 48, 48, 0.2);
+    /* box-shadow: 8px 8px 16px rgba(48, 48, 48, 0.2); */
 }
 
 .section1 {
@@ -162,13 +162,13 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F9FBFF;      /* kolor tła – taki jak body */
+  background: #ffffff;      /* kolor tła – taki jak body */
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(22, 174, 194); /* kolor "kciuka" – ciut ciemniejszy dla kontrastu */
   border-radius: 10px;       /* zaokrąglenie */
-  border: 2px solid #F9FBFF; /* żeby wyglądało schludnie */
+  border: 2px solid #ffffff; /* żeby wyglądało schludnie */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -182,4 +182,9 @@ a:hover {
     font-size: 120%;
     font-weight: bold;
     margin-top: -18px;
+}
+
+#klauzula
+{
+    font-size: 80%;
 }
