@@ -4,6 +4,7 @@ body {
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffffff;
+    scale: 0.9;
 }
 
 .all {
