@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
     overflow: hidden;       /* żeby sekcje były równo z border-radius */
     border: 2.5px solid rgb(22, 174, 194);
-    /* box-shadow: 8px 8px 16px rgba(48, 48, 48, 0.2); */
+    box-shadow: 8px 8px 16px rgba(48, 48, 48, 0.2);
 }
 
 .section1 {
@@ -61,7 +61,7 @@ body {
 
 
 
-.section1 hr {
+.section1 hr{
   border: none;
   border-top: 1.5px solid #fff;   /* białe */
   margin: 15px 0;
@@ -84,9 +84,10 @@ body {
 }
 
 .section1 li {
-  margin: 3px 2px;
+  margin: 0px 2px;
   position: relative;
   padding-left: 12px;   /* mały odstęp na ikonkę */
+  
 }
 
 .section1 li::before {
@@ -109,7 +110,7 @@ body {
 }
 
 .section2 li {
-  margin: 3px 6px;
+  margin: 0px 6px;
   position: relative;
   padding-left: 12px;   /* mały odstęp na ikonkę */
 }
@@ -188,4 +189,104 @@ a:hover {
 #klauzula
 {
     font-size: 80%;
+}
+
+/* wypełnij .hid2 na 100% nie waze czy w wyzszym divie jest padding czy cos na 100% witdh jakby i wypełnij kolorem rgb(22, 174, 194) */
+
+.hid2 {
+  display: none;
+    width: calc(100% + 20px);  /* 10px padding left + right */
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: rgb(22, 174, 194);
+    padding: 10px;
+}
+
+    #hid3
+    {
+      display: none;
+    }
+
+
+/* Responsywność   ale tak żeby div adres był na gbórze w tej flex column poterm section 2 i na koniec cały section 1 czyli jakby najpierw z section 1 sam div adres potem 2 i zonwu 1*/
+@media (max-width: 768px) {
+    .all {
+        flex-direction: column;
+        width: 100%;
+        margin-top: -100px;
+    }
+    .section1, .section2 {
+        width: calc(100% - 20px)
+        
+
+    }
+
+    li
+    {
+        margin-top: 10px !important;
+        padding-left: 15px !important; 
+    }
+    .hid1
+    {
+      display: none;
+    }
+
+
+
+    #hid3
+    {
+      display: block;
+    }
+        
+        .hid2
+        {
+          display: block;
+          width: 100%;
+          color: white;
+        }
+        .hid2 p
+        {
+          color: white;
+        }
+
+        
+      .hid2 ul {
+        list-style: none;   /* wyłączamy domyślne kropki */
+        padding-left: 0;
+        margin-left: 0;
+      }
+
+      .hid2 li {
+        margin: 0px 2px;
+        position: relative;
+           /* mały odstęp na ikonkę */
+        margin-top: 10px;
+      }
+
+      .hid2 li::before {
+        content: "•";          /* własna kropka */
+        position: absolute;
+        left: 0;
+        color: white;          /* dopasuj do sekcji */
+        font-size: 16px;
+        line-height: 1;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .hid2 hr{
+      border: none;
+      border-top: 1.5px solid #fff;   /* białe */
+      margin: 15px 0;
+      width: 100%;                  /* pełna szerokość */
+    }
+
+    .section1 {
+        border-bottom: 2.5px solid rgb(22, 174, 194);
+        border-right: none;
+    }
+    #technik
+    {
+        margin-top: 0px;
+    }
+
 }
