@@ -156,6 +156,41 @@ a:hover {
 }
 
 
+.zdj {
+  margin-top:20px ;
+  position: relative;
+  display: inline-block; /* żeby pseudo-elementy pasowały do obrazka */
+}
+
+.zdj img {
+  width: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+/* narożnik górny lewy */
+.zdj::before {
+  content: "";
+  position: absolute;
+  top: -10px;   /* odsunięcie od obrazka */
+  left: -10px;
+  width: 25px;  /* długość "ramki" */
+  height: 25px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+/* narożnik dolny prawy */
+.zdj::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
 
 
 /* Styl scrollbara */
