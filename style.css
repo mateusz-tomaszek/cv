@@ -101,7 +101,10 @@ body {
   transform: translateY(-50%);
 }
 
-
+.wyszktal li::before
+{
+  content: "-" !important;  
+}
 
 .section2 ul {
   list-style: none;   /* wyłączamy domyślne kropki */
